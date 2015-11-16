@@ -29,12 +29,12 @@ test("takes a number as a parameter (n) and returns the sum of numbers from 1 to
     assert.deepEqual(sum_numbers(5),45);
 });
 
-function length(name){
-    return 5;
-}
-
-
 
 test("takes a string parameter and returns the length of the supplied 'parameter'",function(assert){
 	assert.equal(length("sxosh"), 5);
 });
+
+
+test("takes a string parameter and returns the supplied parameter in 'uppercase'",function(assert){
+	assert.equal(upper("sxosh"),  "sxosh");
+}); 
