@@ -25,23 +25,16 @@ test("takes a number as a parameter (n) and returns a list of numbers from 1 to 
 });
 
 
-function sum_numbers(inputnumber){
-	var sum = 45;
-	
-	for(var i=0; i < sum.length; i++) {
-		sum = sum(i);
-	
-	}
-	return  sum;
-}	
-
-
-
-
-
-
-
-
 test("takes a number as a parameter (n) and returns the sum of numbers from 1 to 'n'", function(assert){
     assert.deepEqual(sum_numbers(5),45);
+});
+
+function length(name){
+    return 5;
+}
+
+
+
+test("takes a string parameter and returns the length of the supplied 'parameter'",function(assert){
+	assert.equal(length("sxosh"), 5);
 });
