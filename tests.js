@@ -2,23 +2,16 @@ test("make sure that it returns 'helloWorld'", function(assert) {
   assert.equal( helloWorld () , "helloWorld");
 });
 
-
 test("takes a username as parameter and returns 'Hello'" ,  function(assert){
-	assert.equal(hello_uppercase("sxosh2010") , "hello , sxosh2010");
-	
+	assert.equal(hello_uppercase("sxosh2010") , "hello , sxosh2010");	
 
  });
-
-
 
 test("takes a username as parameter and returns as 'Hello'" , function(assert){
 assert.equal(hello_joe("Joe") , "Hello!");
 assert.equal(hello_joe("Bob") , "Hello!");
 assert.equal(hello_joe("Sxosh"),"Hello, Sxosh!");
 });
-
-
-
 
 test("takes a number as a parameter (n) and returns a list of numbers from 1 to 'n'", function(assert){
 	assert.deepEqual(number_list(10),[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
@@ -39,16 +32,20 @@ test("takes a string parameter and returns the supplied parameter in 'uppercase'
 	assert.equal(upper("sxosh"),  "sxosh");
 });
 
-
-
-
-
-
-
 test("takes a string parameter and returns the reversed string 'parameter'",function(assert){
 	assert.equal(reverse("sxosh"), "hsoxs");
 });
+test("takes a number as parameter and returns a list of hello world entries equal to the number'supplied'",function(assert){
+	assert.equal(hello_list(name), "hello world");
 
+
+});
+
+function hello_list(list) {
+    
+return "hello world" + list;
+
+}
 
 
 
