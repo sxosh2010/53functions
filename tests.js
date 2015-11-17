@@ -37,4 +37,23 @@ test("takes a string parameter and returns the length of the supplied 'parameter
 
 test("takes a string parameter and returns the supplied parameter in 'uppercase'",function(assert){
 	assert.equal(upper("sxosh"),  "sxosh");
-}); 
+});
+
+
+
+
+
+
+
+test("takes a string parameter and returns the reversed string 'parameter'",function(assert){
+	assert.equal(reverse("sxosh"), "hsoxs");
+});
+
+
+
+
+
+
+
+
+
