@@ -3,7 +3,7 @@ test("make sure that it returns 'helloWorld'", function(assert) {
 });
 
 test("takes a username as parameter and returns 'Hello'" ,  function(assert){
-	assert.equal(hello_uppercase("sxosh2010") , "hello , sxosh2010");	
+	assert.equal(hello_uppercase("SXOSH2010") , "hello , SXOSH2010");	
 
  });
 
@@ -41,11 +41,14 @@ test("takes a number as parameter and returns a list of hello world entries equa
 
 });
 
-function hello_list(list) {
-    
-return "hello world" + list;
+test("given a list of numbers returns the highest and lowest numbers in the 'list'",function(assert){
+    assert.equal(high_low(name), "highest");
+});
 
-}
+
+
+
+
 
 
 
