@@ -35,17 +35,27 @@ test("takes a string parameter and returns the supplied parameter in 'uppercase'
 test("takes a string parameter and returns the reversed string 'parameter'",function(assert){
 	assert.equal(reverse("sxosh"), "hsoxs");
 });
-test("takes a number as parameter and returns a list of hello world entries equal to the number'supplied'",function(assert){
-	assert.equal(hello_list(name), "hello world");
+test("takes a number as parameter and returns a  list of hello world entries equal to the number'supplied'",function(assert){
+	assert.equal(Array("hello world"),"hello world");
 
 
 });
 
-test("given a list of numbers returns the highest and lowest numbers in the 'list'",function(assert){
-    assert.equal(high_low(name), "highest");
-});
+// test("given a list of numbers returns the highest and lowest numbers in the 'list'",function(assert){
+//     assert.equal(high_low(name), "highest");
+// });
+
+// // test("takes a sentence as a parameter and returns the number of words in the 'sentence'",function(assert){
+// //      assert.equal(count_words("sentence"),"number");
+// // });
 
 
+
+// // function count_words(sentence){
+// // var 
+
+// // return "sentence"+ number;
+// // }
 
 
 
